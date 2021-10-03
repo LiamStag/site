@@ -8,4 +8,8 @@ def index(request):
     posts = Video.objects.all()
     return render(request, 'main/index.html', {'posts': posts, 'menu': menu, 'title': 'Главная страница'})
 
+def about(request):
+    posts = Video.objects.all()
+    return render(request, 'main/about.html', {'posts': posts, 'menu': menu, 'title': 'Обо мне'})
+
 
