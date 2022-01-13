@@ -3,7 +3,18 @@
 
 
 {% block content %}
-<ul>
+
+<div class='hero'>
+    <h1> maxim kozlov </h1>
+    <div class='hero-content'>
+        <p class ='year'> </p>
+        <img src="https://sun9-76.userapi.com/impf/c851536/v851536553/12c32b/54WRedRZOFk.jpg?size=1512x1002&quality=96&sign=9b095ef846cd10b513f4a917b989d82e&type=album" alt="iam">
+    <p>Photo Grapher <br>Video Grapher <br>3D Designer</p>
+    </div>
+</div>
+
+<div class='content'>
+    <ul>
     {% for p in posts %}
     <li>
         <h2>{{p.title}}</h2>
@@ -11,6 +22,7 @@
         {% video p.video 'small' %}
     </li>
     {% endfor %}
-</ul>
+    </ul>
+</div>
 
 {% endblock %}
